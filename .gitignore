@@ -2,9 +2,6 @@
 
 .history
 
-.yarn
-.pnp*
-
 # dependencies
 /node_modules
 /.pnp
