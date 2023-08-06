@@ -1,18 +1,36 @@
-import React, { Children } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import NotFound from './pages/NotFound';
-import Home from './pages/Home';
+import {
+  NotFound,
+  Home,
+  SignUp,
+  SignIn,
+  Problems,
+  Solutions,
+  SolutionDetail,
+  Profile,
+  MyPage,
+} from './pages';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     errorElement: <NotFound />,
-    children: [{ index: true, path: '/', element: <Home /> }],
+    children: [
+      { index: true, path: '/', element: <Home /> },
+      { path: 'signUp', element: <SignUp /> },
+      { path: 'signIn', element: <SignIn /> },
+      { path: 'problems', element: <Problems /> },
+      { path: 'solutions', element: <Solutions /> },
+      { path: 'solution/detail/:solutionId', element: <SolutionDetail /> },
+      { path: 'profile/:userId', element: <Profile /> },
+      { path: 'myPage', element: <MyPage /> },
+    ],
   },
 ]);
 
