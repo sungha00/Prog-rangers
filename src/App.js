@@ -3,12 +3,12 @@ import Header from './components/Header';
 import './App.css';
 
 function App() {
-	return (
-		<>
-			<Header />
-			<Outlet />
-		</>
-	);
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
 }
 
 export default App;
