@@ -7,7 +7,7 @@ const BeforeLoginNav = () => {
   return (
     <div className="BeforeLoginNav" css={navStyle}>
       <Link to="/problems" css={linkDefault}>
-        리뷰 보러가기
+        풀이 보러가기
       </Link>
       <Link to="signIn" css={linkDefault}>
         로그인
