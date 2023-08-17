@@ -48,11 +48,17 @@ export const labelStyle = css`
   }
 `;
 
-export const inputStyle = css`
+export const inputContainerStyle = css`
+  position: relative;
   width: 600px;
   height: 50px;
+`;
+
+export const inputStyle = css`
+  width: 100%;
+  height: 100%;
   color: ${theme.dark2};
-  border-radius: 25px;
+  border-radius: 12px;
   border: 1px solid;
   padding: 15px 30px;
   font-size: 14px;
@@ -63,14 +69,24 @@ export const inputStyle = css`
   }
 `;
 
-export const buttonStyle = css`
+export const submitButtonStyle = css`
   width: 600px;
   height: 50px;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 12px;
   background-color: #3486a0;
   margin-top: 50px;
+`;
+
+export const confirmButtonStyle = css`
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  background: var(--main-opa-30, #c2dbe3);
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
 `;

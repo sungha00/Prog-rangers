@@ -5,7 +5,8 @@ import {
   labelStyle,
   formStyle,
   inputStyle,
-  buttonStyle,
+  submitButtonStyle,
+  inputContainerStyle,
 } from '../../styles/signUpPage';
 
 export default function SignUpForm() {
@@ -18,7 +19,9 @@ export default function SignUpForm() {
       <label htmlFor="email" css={labelStyle}>
         아이디
       </label>
-      <input placeholder="아이디를 입력해주세요" css={inputStyle} />
+      <div css={inputContainerStyle}>
+        <input placeholder="아이디를 입력해주세요" css={inputStyle} />
+      </div>
       <label htmlFor="email" css={labelStyle}>
         비밀번호
       </label>
@@ -35,20 +38,26 @@ export default function SignUpForm() {
       <label htmlFor="email" css={labelStyle}>
         닉네임
       </label>
-      <input placeholder="이름을 입력해주세요" css={inputStyle} />
+      <div css={inputContainerStyle}>
+        <input placeholder="이름을 입력해주세요" css={inputStyle} />
+      </div>
       <label htmlFor="email" css={labelStyle}>
         휴대전화
       </label>
-      <input
-        type="tel"
-        placeholder="전화번호를 입력해주세요 (-생략)"
-        css={inputStyle}
-      />
+      <div css={inputContainerStyle}>
+        <input
+          type="tel"
+          placeholder="전화번호를 입력해주세요 (-생략)"
+          css={inputStyle}
+        />
+      </div>
       <label htmlFor="email" css={labelStyle}>
         이메일
       </label>
-      <input type="email" css={inputStyle} />
-      <button css={buttonStyle}>회원가입</button>
+      <div css={inputContainerStyle}>
+        <input type="email" css={inputStyle} />
+      </div>
+      <button css={submitButtonStyle}>회원가입</button>
     </form>
   );
 }
