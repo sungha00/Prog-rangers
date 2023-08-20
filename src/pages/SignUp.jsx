@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
 import SignUpForm from '../components/SignUp/SignUpForm';
 import { pageStyle, innerPageStyle, headingStyle } from '../styles/signUpPage';
