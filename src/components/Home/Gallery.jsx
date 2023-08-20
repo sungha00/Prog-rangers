@@ -1,5 +1,4 @@
 import React from 'react';
-/** @jsxImportSource @emotion/react */
 import {
   HeadingStyle,
   textStyle,

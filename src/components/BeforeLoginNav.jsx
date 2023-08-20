@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-/** @jsxImportSource @emotion/react */
 import { navStyle, linkDefault } from '../styles/headerStyle';
 
 const BeforeLoginNav = () => {
