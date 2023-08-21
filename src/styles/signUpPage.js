@@ -17,13 +17,13 @@ export const innerPageStyle = css`
 `;
 
 export const headingStyle = css`
-  margin-top: 120px;
+  margin-top: 90px;
   color: ${theme.dark1};
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 `;
 
 export const formStyle = css`
